@@ -1,12 +1,26 @@
 .about{
   position: relative;
-  margin-bottom: 147px;
+  @media screen and (min-width: 768px){
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1200px){
+    margin-bottom: 147px;
+  }
 }
 .about-img{
   background: linear-gradient(0deg, rgba(255, 214, 0, 0.03),
    rgba(255, 214, 0, 0.03));
 border-radius: 300px;
-padding-right: 60px;
+
+@media screen and (min-width: 768px){
+  width: 249px;
+  padding-right: 22px;
+}
+@media screen and (min-width: 1200px){
+  width: 490px;
+  padding-right: 60px;
+}
 }
 .about-list{
   display: flex;
@@ -14,13 +28,26 @@ padding-right: 60px;
   align-items: center;
 }
 .about-text{
+@media screen and (min-width: 768px){
+  font-size: 16px;
+  line-height: 21px;
+padding: 38px 10px;
+}
+
+@media screen and (min-width: 1200px){
+  font-size: 25px;
   line-height: 31px;
 padding: 52px 10px;
 }
+}
+
 .about-matrix{
-  display: block;
-    position: absolute;
-    top: 117%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  display: none;
+    @media screen and (min-width: 1200px){
+      display: block;
+      position: absolute;
+      top: 117%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 }

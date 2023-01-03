@@ -2,7 +2,13 @@
   position: relative;
 }
 .price-title{
-  padding-top: 60px;
+ 
+  @media screen and (min-width: 768px){
+    padding-top: 48px;
+  }
+  @media screen and (min-width: 1200px){
+    padding-top: 60px;
+  }
 }
 .price-text{
   text-align: center;
@@ -10,21 +16,33 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px){
+    padding: 21px 10px;
+  }
+
+  @media screen and (min-width: 1200px){
   padding: 45px 10px;
+  }
 }
 .price-img{
-  display: block;
-    position: absolute;
-    top: 82%;
-    left: 22%;
-    transform: translate(-50%, -50%);
+  display: none;
+    @media screen and (min-width: 1200px){
+      display: block;
+      position: absolute;
+      top: 82%;
+      left: 22%;
+      transform: translate(-50%, -50%);
+    }
 }
 .price-img__second{
-  display: block;
-    position: absolute;
-    top: 82.4%;
-    left: 77.5%;
-    transform: translate(-50%, -50%);
+ display: none;
+    @media screen and (min-width: 1200px){
+      display: block;
+      position: absolute;
+      top: 82.4%;
+      left: 77.5%;
+      transform: translate(-50%, -50%);
+    }
 }
 .price-button{
   font-weight: 700;
@@ -33,10 +51,19 @@ text-align: center;
 color: #FFFFFF;
 background-color: rgba(255, 214, 0, 0.8);
 border-radius: 50px;
-padding: 26px 44px;
-margin-bottom: 80px;
+
 transform: scale(1);
 transition: transform 250ms linear, background-color 250ms linear;
+@media screen and (min-width: 768px){
+  font-size: 18px;
+  padding: 23px 38px;
+margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px){
+  font-size: 25px;
+  padding: 26px 44px;
+margin-bottom: 80px;
+}
 }
 .price-button:hover,.price-button:focus{
   transform: scale(1.1);
