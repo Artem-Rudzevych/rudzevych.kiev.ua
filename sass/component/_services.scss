@@ -1,0 +1,33 @@
+.services-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  
+}
+
+.services-list :nth-last-child(-n+2){
+  margin-bottom: 0px;
+
+}
+
+.services-item{
+  
+  margin-bottom: 20px;
+}
+
+.services-item.text{
+max-width: 620px;
+max-height: 350px;
+}
+
+.services-text{
+  padding: 0 10px 29px 10px;
+ 
+}
+.services-title{
+  font-size: 27px;
+line-height: 32px;
+  padding-top: 13px;
+  padding-bottom: 29px;
+}

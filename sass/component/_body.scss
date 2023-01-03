@@ -1,6 +1,22 @@
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  
+}
+img{
+  display: block;
+}
+
+
 h1,
 h2,
 h3 {
+  font-weight: 700;
   margin: 0;
   padding: 0;
 }

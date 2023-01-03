@@ -1,0 +1,18 @@
+.about{
+  margin-bottom: 147px;
+}
+.about-img{
+  background: linear-gradient(0deg, rgba(255, 214, 0, 0.03),
+   rgba(255, 214, 0, 0.03));
+border-radius: 300px;
+padding-right: 60px;
+}
+.about-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-text{
+  line-height: 31px;
+padding: 52px 10px;
+}
