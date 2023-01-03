@@ -16,8 +16,38 @@
   <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
+
+<!-- Кнопка наверх -->
+<div style="display: none" id="topNubex" class="topNubex">
+  <svg width="30" height="30" class="top-flex">
+    <use href="./img/icons.svg#arrow"></use>
+  </svg>
+</div>
+<!-- Месенжеры -->
+<a
+  href="viber://chat?number=%2B380505453376"
+  class="messenger"
+  aria-label="Написати у Вайбер"
+>
+  <svg width="30" height="30" class="messenger-icon">
+    <use href="./img/icons.svg#viber"></use>
+  </svg>
+</a>
+<a
+  href="tg://resolve?domain=Rudzevych"
+  class="messenger-telegram"
+  aria-label="Написати у Телеграм"
+>
+  <svg width="30" height="30" class="messenger-icon">
+    <use href="./img/icons.svg#telegram"></use>
+  </svg>
+</a>
+
+
+
+
   <!-- Header -->
-  <header>
+  <header class="header">
   <section class="container">
     <div class="header-flex">
       <div class="logo">
@@ -34,9 +64,11 @@
       </div>
       <nav class="menu">
         <ul class="menu-list">
-        <li class="menu-item"><a href="tel:+380505453376" class="">+380505453376</a></li>
-        <li class="menu-item"><a href="" class="">Послуги</a></li>
-        <li class="menu-item"><a href="" class="">Ціни</a></li>
+        <li class="menu-item menu-link"><a href="tel:+380505453376" class=""><svg class="header-icon" width="15" height="26">
+          <use href="./img/icons.svg#tel"></use>
+        </svg>+380505453376</a></li>
+        <li class="menu-item menu-link"><a href="" class="">Послуги</a></li>
+        <li class="menu-item menu-link"><a href="" class="">Ціни</a></li>
       </ul>
       </nav>
     </div>
@@ -53,6 +85,7 @@
   </section>
   <!-- About -->
   <section class="about">
+    <img src="./img/matrix.svg" alt="" class="about-matrix">
     <div class="container">
       <ul class="about-list">
         <li class="about-img">
@@ -67,10 +100,12 @@
     </div>
   </section>
   <!-- Services -->
-  <section class="container">
+  <section class="services container">
+
+    <img src="./img/matrix3.svg" alt="" class="services-img">
     <h2 class="title">Послуги</h2>
     <ul class="services-list">
-      <li class="services-item"> <img src="./img/1.jpg" alt="" class="services-img"> </li>
+      <li class="services-item"> <img src="./img/1.jpg" alt="" class=""> </li>
       <li class="services-item text">
         <h3 class="services-title">Класичний лікувально-оздоровчий масаж</h3>
         <p class="services-text ">Масаж який підходить для людей страждаючих хронічними болями у м'язах та суглобах, 
@@ -79,18 +114,37 @@
       <li class="services-item text">
         <h3 class="services-title">Класичний розслабляючий масаж</h3>
         <p class="services-text">Масаж  підходить для людей які навантажені більш психологічно ніж фізично, та не в змозі самостійно розслаблятися, постійно перебувають у стресі, такий масаж більше впливає на нервову систему ніж на  м'язи, покращується загальне самопочуття, сон та стресостійкість</p></li>
-      <li class="services-item"> <img src="./img/2.jpg" alt="" class="services-img"> </li>
-      <li class="services-item"> <img src="./img/3.jpg" alt="" class="services-img"> </li>
+      <li class="services-item"> <img src="./img/2.jpg" alt="" class=""> </li>
+      <li class="services-item"> <img src="./img/3.jpg" alt="" class=""> </li>
       <li class="services-item text">
         <h3 class="services-title">Класичний лімфодренажний масаж</h3>
         <p class="services-text">Масаж  який здебільшого призначають лікарі при певних проблемах з лімфо та кровообігом, може проводитися по всіх ділянках тіла або здебільшого на основних м'язових групах, таких як ноги та спина. Кількість сеансів також визначається лікарем але можна робити і без призначення та тільки значного ефекту можливо і не відчути</p></li>
       <li class="services-item text">
         <h3 class="services-title">Постізометрична релаксація</h3>
         <p class="services-text">Унікальний комплекс вправ який як і лікувально-оздоровчий масаж націлений на глибоку роботу з м'язами, відмінність його лише в тому що масаж при цьому не робиться, лише розтягування м'язів що дуже сильно знижуе неприємні або больові відчуття, можна робити як окремо так і в комплексі з лікувальним масажем.</p></li>
-      <li class="services-item"> <img src="./img/4.jpg" alt="" class="services-img"> </li>
+      <li class="services-item"> <img src="./img/4.jpg" alt="" class=""> </li>
     </ul>
   </section>
-  <section class=""></section>
-  <footer></footer>
+  <!-- Price -->
+  <section class="price container">
+    <img src="./img/matrix.svg" alt="" class="price-img">
+    <img src="./img/matrix4.svg" alt="" class="price-img__second">
+    <h2 class="price-title title">Ціни</h2>
+    <p class="price-text text">  Ціна та тривалість сеансу залежить від декількох факторів:
+      Здебільшого тривалість сеансу 40-60 хв. але якщо я бачу що ще треба трохи часу щоб правильно завершити сеанс то я можу і затриматись, з мого досвіду не коректно завершувати сенс за годинником, буває таке що перші два сеанси можуть бути по 90 хв. та ще чотири по 40 і цього достатньо щоб завершити курс, головне не скільки, а як)
+        Ціна за сеанс фіксована та становить 600 грн це з урахуванням дороги але тільки Деснянський район. В інші райони міста ціна буде іншою та обговорюється окремо, також діють сімейні знижки, 2 людини 1000 грн за двох та 3 людини 1300 грн за трьох відповідно.</p>
+        <a href="tel:+380505453376" class="price-button">Подзвонити</a>
+  </section>
+  <footer class="footer ">
+    <div class="container">
+<div class="footer-box">
+  <p class="footer-text">Професійний массаж Київ 2018 - 2023р.</p>
+</div>
+    </div>
+  </footer>
+
+  <script src="./js/mobile-menu.js" type="module"></script>
+          <script src="./js/jslib.js"></script>
+          <script src="./js/link.js" type="module"></script>
 </body>
 </html>

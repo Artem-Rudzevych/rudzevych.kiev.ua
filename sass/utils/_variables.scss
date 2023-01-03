@@ -1,3 +1,7 @@
+:root{
+  --about-bg-color: rgba(255, 214, 0, 0.28);
+  --main-text-color: #000;
+}
 .container{
   
   margin-left: auto;
@@ -27,7 +31,29 @@
   border-radius: 50px;
 }
 .title{
-padding-bottom: 60px;
+padding-bottom: 50px;
 font-size: 40px;
 line-height: 47px;
+}
+.topNubex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--about-bg-color);
+  fill: var(--main-text-color);
+  box-shadow: 0px 2px 9px rgb(0 0 0 / 50%);
+  transform: scale(1);
+  transition: transform 200ms linear;
+  border-radius: 50%;
+  border: 1px dashed #000000;;
+  cursor: pointer;
+  z-index: 2;
+}
+#topNubex:hover {
+  transform: scale(1.1);
 }

@@ -1,0 +1,16 @@
+.footer{
+box-sizing: border-box;
+border-top: 2px dashed #000000;
+}
+
+
+.footer-text{
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px 0;
+}
+.footer-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
