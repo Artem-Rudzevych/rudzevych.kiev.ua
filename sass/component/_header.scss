@@ -1,0 +1,17 @@
+.header-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu{
+  margin-right: auto;
+  margin-left: 236px;
+}
+.menu-list{
+  display: flex;
+    & .menu-item:nth-child(1){
+      margin-right: 34px;
+    }
+    & :not(:last-child){
+      margin-right: 13px;}
+}
