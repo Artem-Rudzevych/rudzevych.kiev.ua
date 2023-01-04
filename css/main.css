@@ -619,7 +619,7 @@ li {
   .price-img__second {
     display: block;
     position: absolute;
-    top: 82.4%;
+    top: 82.2%;
     left: 78.4%;
     transform: translate(-50%, -50%);
   }
