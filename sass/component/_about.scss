@@ -1,5 +1,6 @@
 .about{
   position: relative;
+  margin-bottom: 30px;
   @media screen and (min-width: 768px){
     margin-bottom: 50px;
   }
@@ -9,10 +10,17 @@
   }
 }
 .about-img{
-  background: linear-gradient(0deg, rgba(255, 214, 0, 0.03),
+ 
+background: linear-gradient(0deg, rgba(255, 214, 0, 0.03),
    rgba(255, 214, 0, 0.03));
 border-radius: 300px;
-
+width: 200px;
+@media screen and (max-width: 767px){
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+  
 @media screen and (min-width: 768px){
   width: 249px;
   padding-right: 22px;
@@ -23,12 +31,23 @@ border-radius: 300px;
 }
 }
 .about-list{
+  
+  @media screen and (min-width: 768px){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.about-text{
+  @media screen and (max-width: 767px){
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+@media screen and (min-width: 768px){
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.about-text{
-@media screen and (min-width: 768px){
   font-size: 16px;
   line-height: 21px;
 padding: 38px 10px;

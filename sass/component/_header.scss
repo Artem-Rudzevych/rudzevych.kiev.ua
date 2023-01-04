@@ -16,8 +16,13 @@
 .menu-list{
   display: flex;
   align-items: center;
- 
+  @media screen and (max-width: 767px){
+    margin-left: 20px;
+    justify-content: space-between;
+  }
+  
     & .menu-item:nth-child(1){
+      margin-right: 20px;
       
       @media screen and (min-width: 768px) {
         margin-right: 104px;
@@ -27,7 +32,7 @@
       }
     }
     & :not(:last-child){
-      
+      margin-right: 15px;
       @media screen and (min-width: 768px){
         margin-right: 43px;
       }
@@ -63,6 +68,14 @@
 .menu-link:focus{
   transform: scale(1.1);
 color: rgba(255, 214, 0, 0.6);
+}
+.logo-icon{
+  width:195px;
+ height:58px;
+ @media screen and (max-width: 767px){
+  width:152px;
+  height:45px;
+ }
 }
 .header-icon{
   fill: currentColor;

@@ -12,18 +12,21 @@
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    font-size: 16px;
+    line-height: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1250px;
     font-size: 25px;
+    line-height: 29.3px;
   }
 }
 
@@ -33,6 +36,10 @@
   border-radius: 50px;
 }
 
+.title {
+  font-size: 22px;
+  line-height: 26px;
+}
 @media screen and (min-width: 768px) {
   .title {
     padding-bottom: 50px;
@@ -199,6 +206,15 @@ li {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .menu-list {
+    margin-left: 20px;
+    justify-content: space-between;
+  }
+}
+.menu-list .menu-item:nth-child(1) {
+  margin-right: 20px;
+}
 @media screen and (min-width: 768px) {
   .menu-list .menu-item:nth-child(1) {
     margin-right: 104px;
@@ -208,6 +224,9 @@ li {
   .menu-list .menu-item:nth-child(1) {
     margin-right: 90px;
   }
+}
+.menu-list :not(:last-child) {
+  margin-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .menu-list :not(:last-child) {
@@ -249,6 +268,17 @@ li {
   color: rgba(255, 214, 0, 0.6);
 }
 
+.logo-icon {
+  width: 195px;
+  height: 58px;
+}
+@media screen and (max-width: 767px) {
+  .logo-icon {
+    width: 152px;
+    height: 45px;
+  }
+}
+
 .header-icon {
   fill: currentColor;
   margin-right: 10px;
@@ -261,6 +291,9 @@ li {
   background-position-y: center;
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 767px;
+  margin-bottom: 10px;
+  background-image: url(../img/hero-mob.jpg);
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -283,6 +316,9 @@ li {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-left: auto;
   margin-right: auto;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 62px 0 47px 0;
 }
 @media screen and (min-width: 768px) {
   .hero-title {
@@ -308,6 +344,9 @@ li {
   border-radius: 50px;
   transform: scale(1);
   transition: transform 250ms linear, background-color 250ms linear;
+  font-size: 16px;
+  padding: 17px 28px;
+  margin-bottom: 95px;
 }
 @media screen and (min-width: 768px) {
   .hero-button {
@@ -332,6 +371,7 @@ li {
 
 .about {
   position: relative;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .about {
@@ -347,6 +387,14 @@ li {
 .about-img {
   background: linear-gradient(0deg, rgba(255, 214, 0, 0.03), rgba(255, 214, 0, 0.03));
   border-radius: 300px;
+  width: 200px;
+}
+@media screen and (max-width: 767px) {
+  .about-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
 }
 @media screen and (min-width: 768px) {
   .about-img {
@@ -361,14 +409,26 @@ li {
   }
 }
 
-.about-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
+@media screen and (max-width: 767px) {
+  .about-text {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+}
 @media screen and (min-width: 768px) {
   .about-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 16px;
     line-height: 21px;
     padding: 38px 10px;
@@ -399,13 +459,18 @@ li {
   position: relative;
 }
 
+.services-img {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .services-img {
+    display: block;
     width: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
   .services-img {
+    display: block;
     width: 350px;
   }
 }
@@ -423,15 +488,19 @@ li {
   }
 }
 
-.services-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .services-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 }
 
-.services-list :nth-last-child(-n+2) {
-  margin-bottom: 0px;
+@media screen and (min-width: 768px) {
+  .services-list :nth-last-child(-n+2) {
+    margin-bottom: 0px;
+  }
 }
 
 .services-item {
@@ -452,11 +521,12 @@ li {
 }
 
 .services-text {
-  padding: 0 10px 29px 10px;
+  padding: 0 10px 10px;
 }
 @media screen and (min-width: 768px) {
   .services-text {
     font-size: 16px;
+    padding: 0 10px 29px 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -465,19 +535,15 @@ li {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .services-title {
-    line-height: 22px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    font-size: 19px;
-  }
+.services-title {
+  padding: 13px 0;
+  line-height: 22px;
+  font-size: 19px;
 }
 @media screen and (min-width: 1200px) {
   .services-title {
     line-height: 32px;
-    padding-top: 13px;
-    padding-bottom: 29px;
+    padding: 13px 0 29px 0;
     font-size: 27px;
   }
 }
@@ -486,6 +552,11 @@ li {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .price-title {
+    padding-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .price-title {
     padding-top: 48px;
@@ -503,6 +574,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  padding: 10px;
 }
 @media screen and (min-width: 768px) {
   .price-text {
@@ -550,6 +622,9 @@ li {
   border-radius: 50px;
   transform: scale(1);
   transition: transform 250ms linear, background-color 250ms linear;
+  font-size: 16px;
+  padding: 17px 28px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .price-button {
@@ -579,7 +654,7 @@ li {
 .footer-text {
   font-weight: 700;
   font-size: 20px;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .footer-box {

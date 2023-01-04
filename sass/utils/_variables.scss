@@ -12,16 +12,19 @@
 
   @media screen and (min-width: 480px) {
     width: 480px;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    font-size: 16px;
+    line-height: 21px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1250px;
     font-size: 25px;
+    line-height: 29.3px;
   }
 
 }
@@ -32,8 +35,12 @@
   border-radius: 50px;
 }
 .title{
+  
+  font-size: 22px;
+  line-height: 26px;
+
   @media screen and (min-width: 768px){
-    padding-bottom: 50px;
+  padding-bottom: 50px;
   font-size: 30px;
   line-height: 35px;
   }
