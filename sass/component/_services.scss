@@ -76,11 +76,12 @@
   }
 }
 .services-title{
-  padding: 13px 0;
+  padding: 13px 10px;
   line-height: 22px;
   font-size: 18px;
 
   @media screen and (min-width: 768px){
+    padding: 13px 0;
     font-size: 19px;
   }
   @media screen and (min-width: 1200px){
