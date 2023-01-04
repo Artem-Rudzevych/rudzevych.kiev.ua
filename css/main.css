@@ -24,7 +24,7 @@
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1250px;
+    width: 1200px;
     font-size: 25px;
     line-height: 29.3px;
   }
@@ -197,7 +197,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .menu {
-    margin-left: 236px;
+    margin-left: 190px;
   }
 }
 
@@ -307,7 +307,12 @@ li {
   .hero {
     max-width: 1920px;
     margin-bottom: 34px;
-    background-image: url(../img/hero2.jpg);
+    background-image: url(../img/hero.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../img/hero-x2.jpg);
   }
 }
 
