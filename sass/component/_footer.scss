@@ -6,8 +6,11 @@ border-top: 2px dashed #000000;
 
 .footer-text{
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   padding: 10px 0;
+  @media screen and (min-width: 768px){
+    font-size: 20px;
+  }
 }
 .footer-box{
   display: flex;
