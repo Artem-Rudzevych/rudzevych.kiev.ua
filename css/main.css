@@ -294,25 +294,25 @@ li {
   background-repeat: no-repeat;
   max-width: 767px;
   margin-bottom: 10px;
-  background-image: url(../img/hero-mob.jpg);
+  background-image: url(../img/hero-mob.webp);
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 1199px;
     margin-bottom: 34px;
-    background-image: url(../img/hero-tab.jpg);
+    background-image: url(../img/hero-tab.webp);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1920px;
     margin-bottom: 34px;
-    background-image: url(../img/hero.jpg);
+    background-image: url(../img/hero.webp);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/hero-x2.jpg);
+    background-image: url(../img/hero-x2.webp);
   }
 }
 

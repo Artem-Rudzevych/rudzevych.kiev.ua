@@ -8,24 +8,24 @@
     background-repeat: no-repeat;
     max-width: 767px;
     margin-bottom: 10px;
-    background-image: url(../img/hero-mob.jpg);
+    background-image: url(../img/hero-mob.webp);
 
     @media screen and (min-width: 768px){
       max-width: 1199px;
       margin-bottom: 34px;
-      background-image: url(../img/hero-tab.jpg);
+      background-image: url(../img/hero-tab.webp);
     }
   
   @media screen and (min-width: 1200px){
     max-width: 1920px;
     margin-bottom: 34px;
-    background-image: url(../img/hero.jpg);
+    background-image: url(../img/hero.webp);
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       & {
-        background-image: url(../img/hero-x2.jpg);
+        background-image: url(../img/hero-x2.webp);
       }
     }
   }
